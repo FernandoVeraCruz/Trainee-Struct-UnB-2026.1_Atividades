@@ -37,7 +37,12 @@ nav ul li a {
     text-decoration: none; /* Remove o sublinhado padrão dos links. */
     font-weight: bold; /* Torna o texto dos links em negrito. */
 }
-
+.main {
+    display: flex; /* Define o layout do elemento principal como flexbox, permitindo que seus filhos sejam organizados em uma linha ou coluna. */
+    flex-direction  : row; /* Permite que os itens dentro do elemento principal quebrem para a próxima linha se não houver espaço suficiente em uma única linha. */
+    justify-content: center; /* Centraliza horizontalmente os itens dentro do elemento principal. */
+    gap: 20px; /* Adiciona um espaço de 20 pixels entre os itens dentro do elemento principal. */
+}
 section {
     background-color: #fff; /* Define a cor de fundo de cada seção para branco. */
     max-width: 800px; /* Limita a largura máxima de cada seção a 800 pixels. Isso impede que o conteúdo se estique demais em telas largas. */
@@ -53,4 +58,48 @@ footer {
     padding: 20px; /* Adiciona um preenchimento de 20 pixels em todos os lados dentro do rodapé. */
     background-color: #333; /* Define a cor de fundo do rodapé para um cinza escuro. */
     color: white; /* Define a cor do texto dentro do rodapé para branco. */
+}
+.igual {
+    display: none;
+
+}
+@media (max-width: 500px) {
+    
+    .main {
+        margin: 10px; /* Reduz a margem ao redor do elemento principal para 10 pixels, proporcionando mais espaço em telas menores. */
+        flex-direction: column; /* Altera a direção dos itens dentro do elemento principal para coluna, empilhando-os verticalmente. */
+    }
+    
+    nav ul { 
+        display: none; /* Esconde a lista de navegação no mobile por padrão */
+    }
+    
+    nav ul.aberto {
+        display: flex; /* Exibe a lista quando a classe .aberto for adicionada pelo JS */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav ul.aberto li {
+        margin: 10px 0; /* Dá espaçamento vertical entre os links no mobile */
+    }
+    
+    section {
+        max-width: 90%; /* Garante que a seção não ultrapasse a largura della tela */
+        margin: 10px auto; /* Mantém a centralização e reduz margens externas */
+        box-sizing: border-box; /* Garante que o padding e a borda não aumentem a largura total */
+    }
+
+    img {
+        max-width: 100%; /* Impede que imagens extrapolem a borda da seção */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .igual {
+        display: block; /* Exibe o elemento "igual" como um bloco, ocupando toda a largura disponível. */
+        text-align: center;
+        font-size: 35px; /* Aumenta o tamanho da fonte para 35 pixels, tornando o símbolo "=" mais visível. */
+        color: white;
+    }
 }
