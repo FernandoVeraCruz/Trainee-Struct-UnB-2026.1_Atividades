@@ -14,19 +14,18 @@
         <h2>Primeira atividade utilizando HTML</h2>
         </div>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
+<nav>
+    <div class="igual"> = </div>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#contato">Contato</a></li>     
+    </ul>
+</nav>
     <main>
 
         <section id="sobre">
-            <h2>Sobre o Projeto</h2>
+            <h1>Sobre o Projeto</h1>
             <p>
                 Esta página foi criada para praticar a estrutura básica
                 do HTML utilizando tags semânticas. O objetivo é demonstrar
@@ -38,7 +37,7 @@
 
         <section id="equipe">
 
-            <h2>Equipe</h2>
+            <h1>Equipe</h1>
 
             <article>
                 <h3>Fernando Vera-Cruz</h3>
@@ -54,7 +53,7 @@
 
         <section id="contato">
 
-            <h2>Contato</h2>
+            <h1>Contato</h1>
 
             <form>
 
@@ -74,6 +73,14 @@
                 <input type="date" id="data" name="data">
                 <br><br>
 
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+                <br><br>
+                
+                <label for="CPF">CPF:</label>
+                <input type="text" id="CPF" name="CPF">
+                <br><br>
+
                 <label for="texto">Texto:</label><br>
                 <textarea id="texto" name="texto" rows="4" cols="30"></textarea>
                 <br><br>
@@ -89,6 +96,13 @@
     <footer>
         <p>© 2026 - Projeto desenvolvido para a atividade Struct.</p>
     </footer>
+<script>
+        const botaoMenu = document.querySelector('.igual');
+        const listaMenu = document.querySelector('nav ul');
 
+        botaoMenu.addEventListener('click', function() {
+            listaMenu.classList.toggle('aberto');
+        });
+    </script>
 </body>
 </html>
