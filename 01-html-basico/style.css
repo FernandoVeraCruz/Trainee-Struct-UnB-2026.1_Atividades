@@ -1,0 +1,56 @@
+body {
+    margin: 0; /* Remove a margem padrão do navegador ao redor do corpo da página. */
+    font-family: Arial, sans-serif; /* Define a família da fonte para todo o texto do corpo da página. Se Arial não estiver disponível, usa uma fonte genérica sem serifa. */
+    background-color: #f4f4f4; /* Define a cor de fundo de toda a página para um cinza claro. */
+    line-height: 1.6; /* Define a altura da linha do texto, tornando-o mais espaçado e legível. 1.6 significa 160% do tamanho da fonte. */
+}
+
+article {
+    margin: 20px 0; /* Adiciona uma margem de 20 pixels acima e abaixo de cada elemento <article>, e 0 nas laterais. Isso cria um espaçamento vertical entre os artigos. */
+}
+
+header {
+    background-color: #333; /* Define a cor de fundo do cabeçalho para um cinza escuro. */
+    color: #fff; /* Define a cor do texto dentro do cabeçalho para branco. */
+    padding: 40px 0; /* Adiciona um preenchimento de 40 pixels acima e abaixo do conteúdo do cabeçalho, e 0 nas laterais. */
+    text-align: center; /* Centraliza horizontalmente todo o texto e elementos inline-block dentro do cabeçalho. */
+}
+
+nav {
+    background-color: #444; /* Define a cor de fundo da barra de navegação para um cinza um pouco mais claro que o cabeçalho. */
+    padding: 10px 0; /* Adiciona um preenchimento de 10 pixels acima e abaixo do conteúdo da navegação, e 0 nas laterais. */
+}
+
+nav ul {
+    text-align: center; /* Centraliza horizontalmente os itens da lista dentro da navegação. */
+    margin: 0; /* Remove a margem padrão da lista não ordenada. */
+    padding: 0; /* Remove o preenchimento padrão da lista não ordenada. */
+}
+
+nav ul li {
+    display: inline; /* Faz com que os itens da lista se comportem como elementos em linha (um ao lado do outro), em vez de blocos (um abaixo do outro). */
+    margin: 0 15px; /* Adiciona uma margem de 15 pixels à esquerda e à direita de cada item da lista, criando espaçamento entre eles. */
+}
+
+nav ul li a {
+    color: white; /* Define a cor do texto dos links dentro da navegação para branco. */
+    text-decoration: none; /* Remove o sublinhado padrão dos links. */
+    font-weight: bold; /* Torna o texto dos links em negrito. */
+}
+
+section {
+    background-color: #fff; /* Define a cor de fundo de cada seção para branco. */
+    max-width: 800px; /* Limita a largura máxima de cada seção a 800 pixels. Isso impede que o conteúdo se estique demais em telas largas. */
+    margin: 20px auto; /* Adiciona uma margem de 20 pixels acima e abaixo, e 'auto' nas laterais. O 'auto' nas laterais, combinado com 'max-width', centraliza a seção horizontalmente na página. */
+    padding: 20px; /* Adiciona um preenchimento de 20 pixels em todos os lados dentro de cada seção, afastando o conteúdo das bordas. */
+    border: 2px solid #333; /* Adiciona uma borda sólida de 2 pixels de espessura e cor cinza escuro ao redor de cada seção. */
+    border-radius: 8px; /* Arredonda os cantos da borda da seção em 8 pixels, dando um visual mais suave. */
+    text-align: center; /* Centraliza horizontalmente o texto e os elementos inline-block dentro de cada seção. */
+}
+
+footer {
+    text-align: center; /* Centraliza horizontalmente o texto dentro do rodapé. */
+    padding: 20px; /* Adiciona um preenchimento de 20 pixels em todos os lados dentro do rodapé. */
+    background-color: #333; /* Define a cor de fundo do rodapé para um cinza escuro. */
+    color: white; /* Define a cor do texto dentro do rodapé para branco. */
+}
