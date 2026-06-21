@@ -13,7 +13,7 @@ export default function App() {
           </h1>
 
           <h2 className="text-xl mt-2">
-            Primeira atividade utilizando HTML
+            Primeira atividade utilizando Typscript e Tailwind
           </h2>
         </div>
       </header>
@@ -88,7 +88,7 @@ export default function App() {
 
           <p className="leading-relaxed">
             Esta página foi criada para praticar a estrutura básica
-            do HTML utilizando tags semânticas. O objetivo é
+            do Typscript utilizando tags semânticas. O objetivo é
             demonstrar o uso de elementos como header, nav,
             main, section, article e footer.
           </p>
